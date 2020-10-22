@@ -1,0 +1,115 @@
+[
+    {
+      "model": "swapiQL.people",
+      "pk": 1,
+      "fields": {
+        "name": "Anakin Skywalker",
+        "age": "25"
+      }
+    },
+    {
+      "model": "swapiQL.people",
+      "pk": 2,
+      "fields": {
+        "name": "Obi-Wan Kenobi",
+        "age": "30"
+      }
+    },
+    {
+      "model": "swapiQL.people",
+      "pk": 3,
+      "fields": {
+        "name": "Padme Amidala",
+        "age": "27"
+      }
+    },
+    {
+      "model": "swapiQL.people",
+      "pk": 4,
+      "fields": {
+        "name": "Master Yoda",
+        "age": "330"
+      }
+    },
+    {
+      "model": "swapiQL.people",
+      "pk": 5,
+      "fields": {
+        "name": "Shiev Palpatine",
+        "age": "45"
+      }
+    },
+    {
+      "model": "swapiQL.people",
+      "pk": 6,
+      "fields": {
+        "name": "Mace Windu",
+        "age": "35"
+      }
+    },
+    {
+      "model": "swapiQL.people",
+      "pk": 7,
+      "fields": {
+        "name": "Qui-Gon Jinn",
+        "age": "39"
+      }
+    },
+    {
+      "model": "swapiQL.movie",
+      "pk": 1,
+      "fields": {
+        "title": "Gwiezdne wojny część I – Mroczne widmo",
+        "MainCharacters": [1, 3, 7],
+        "year": "1999"
+      }
+    },
+    {
+      "model": "swapiQL.movie",
+      "pk": 2,
+      "fields": {
+        "title": "Gwiezdne wojny część II – Atak klonów",
+        "MainCharacters": [1, 2, 3, 4, 6],
+        "year": "2002"
+      }
+    },
+    {
+      "model": "swapiQL.movie",
+      "pk": 3,
+      "fields": {
+        "title": "Gwiezdne wojny część III – Zemsta Sithów",
+        "MainCharacters": [1, 2, 3, 4, 6, 7],
+        "year": "2005"
+      }
+    },
+    {
+      "model": "swapiQL.planet",
+      "pk": 1,
+      "fields": {
+        "name": "Tatooine",
+        "population": "200000000",
+        "residents": [1],
+        "gravity": "1.25x standard earth gravity"
+      }
+    },
+    {
+      "model": "swapiQL.planet",
+      "pk": 2,
+      "fields": {
+        "name": "Naboo",
+        "population": "600000000",
+        "residents": [3, 5],
+        "gravity": "1.20x standard earth gravity"
+      }
+    },
+    {
+      "model": "swapiQL.planet",
+      "pk": 3,
+      "fields": {
+        "name": "Coruscant",
+        "population": "9000000000",
+        "residents": [1, 2, 3, 4, 5, 6, 7],
+        "gravity": "1.11x standard earth gravity"
+      }
+    }
+  ]
