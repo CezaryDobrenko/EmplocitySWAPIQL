@@ -1,5 +1,5 @@
 from graphene_django.types import DjangoObjectType, ObjectType
-from aplikacja.swapiQL.models import Movie
+from EmploApp.swapiQL.models import Movie
 
 class MovieType(DjangoObjectType):
     class Meta:

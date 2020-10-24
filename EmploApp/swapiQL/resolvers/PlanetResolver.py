@@ -1,4 +1,4 @@
-from aplikacja.swapiQL.models import Planet
+from EmploApp.swapiQL.models import Planet
 
 def resolve_planet(self, info, **kwargs):
     id = kwargs.get('id')

@@ -1,7 +1,7 @@
 import graphene
-from aplikacja.swapiQL.inputs.modelsInput import MovieInput, PeopleInput
-from aplikacja.swapiQL.typeDefs.PeopleType import PeopleType
-from aplikacja.swapiQL.typeDefs.MovieType import MovieType 
+from EmploApp.swapiQL.inputs.modelsInput import MovieInput, PeopleInput
+from EmploApp.swapiQL.typeDefs.PeopleType import PeopleType
+from EmploApp.swapiQL.typeDefs.MovieType import MovieType 
 
 class CreateMovie(graphene.Mutation):
     class Arguments:

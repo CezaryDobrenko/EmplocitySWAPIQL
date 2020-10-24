@@ -1,4 +1,4 @@
-from aplikacja.swapiQL.models import People
+from EmploApp.swapiQL.models import People
 
 def resolve_people(self, info, **kwargs):
     id = kwargs.get('id')

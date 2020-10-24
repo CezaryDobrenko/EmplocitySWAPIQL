@@ -1,5 +1,5 @@
 from graphene_django.types import DjangoObjectType, ObjectType
-from aplikacja.swapiQL.models import Planet
+from EmploApp.swapiQL.models import Planet
 
 class PlanetType(DjangoObjectType):
     class Meta:

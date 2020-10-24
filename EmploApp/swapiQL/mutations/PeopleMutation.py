@@ -1,7 +1,7 @@
 import graphene
-from aplikacja.swapiQL.models import People
-from aplikacja.swapiQL.inputs.modelsInput import PeopleInput
-from aplikacja.swapiQL.typeDefs.PeopleType import PeopleType
+from EmploApp.swapiQL.models import People
+from EmploApp.swapiQL.inputs.modelsInput import PeopleInput
+from EmploApp.swapiQL.typeDefs.PeopleType import PeopleType
 
 
 class CreatePeople(graphene.Mutation):
