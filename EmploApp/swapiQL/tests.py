@@ -1,4 +1,5 @@
 import pytest
+import json
 import graphene 
 from graphene import ObjectType
 from graphene_django.types import DjangoObjectType, ObjectType
@@ -30,6 +31,14 @@ def test_checkForPresenceOfMaceWinduInMovies():
     )
     
     countPresenceInMovies = len(list(result.data.items())[0][1])
-    expectedValue = 2
+    recivedResult = list(result.data.items())[0][1]
 
-    assert countPresenceInMovies == expectedValue
+    expectedValueOfMovies = 2
+    expectedResult = [
+        {'title': 'Gwiezdne wojny cz II', 'year': 2002, 'MainCharacters': [{'name': 'Anakin Skywalker'}, {'name': 'Mace Windu'}, {'name': 'Obi-Wan Kenobi'}]},
+        {'title': 'Gwiezdne wojny cz III', 'year': 2005, 'MainCharacters': [{'name': 'Anakin Skywalker'}, {'name': 'Mace Windu'}, {'name': 'Obi-Wan Kenobi'}, {'name': 'Sheev Palpatine'}]}
+    ]
+
+    assert not result.errors
+    assert countPresenceInMovies == expectedValueOfMovies
+    assert recivedResult == expectedResult

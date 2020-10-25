@@ -24,21 +24,21 @@ def checkForPresenceOfMaceWinduInMoviesData():
 
     Movie1 = Movie()
     Movie1.id = 1
-    Movie1.title = "Gwiezdne wojny część I – Mroczne widmo"
+    Movie1.title = "Gwiezdne wojny cz I"
     Movie1.MainCharacters.set([People2.id, People4.id])
     Movie1.year = 1999
     Movie1.save()
 
     Movie2 = Movie()
     Movie2.id = 2
-    Movie2.title = "Gwiezdne wojny część II – Atak klonów"
+    Movie2.title = "Gwiezdne wojny cz II"
     Movie2.MainCharacters.set([People1.id, People2.id, People4.id])
     Movie2.year = 2002
     Movie2.save()
 
     Movie3 = Movie()
     Movie3.id = 3
-    Movie3.title = "Gwiezdne wojny część III – Zemsta Sithów"
+    Movie3.title = "Gwiezdne wojny cz III"
     Movie3.MainCharacters.set([People1.id, People2.id, People3.id, People4.id])
     Movie3.year = 2005
     Movie3.save()
