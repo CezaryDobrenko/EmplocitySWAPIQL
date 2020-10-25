@@ -10,7 +10,6 @@ from EmploApp.swapiQL.resolvers.MovieResolver import resolve_movie, resolve_movi
 from EmploApp.swapiQL.resolvers.PlanetResolver import resolve_planet, resolve_planets
 from EmploApp.swapiQL.mutations.MovieMutation import CreateMovie, UpdateMovie
 from EmploApp.swapiQL.mutations.PeopleMutation import CreatePeople, UpdatePeople
-from EmploApp.swapiQL.tests import test_checkForPresenceOfMaceWinduInMovies
 
 class Query(ObjectType):
     planet = graphene.Field(PlanetType, id=graphene.Int(), resolver=resolve_planet)
@@ -29,5 +28,3 @@ class Mutation(graphene.ObjectType):
     update_movie = UpdateMovie.Field()
 
 schema = graphene.Schema(query=Query, mutation=Mutation)
-
-test_checkForPresenceOfMaceWinduInMovies()
